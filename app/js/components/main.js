@@ -15,7 +15,7 @@ export default class Main extends Component{
 					I am a Software Engineer at Cisco Systems, Boxborough, MA.
 					At Cisco, I am developing Context Service, a cloud storage service.
 					I am extensively involved in design and development of context service.
-					<br/>
+					<br/><br/>
 					I have two years of cumulative experience as a Software Engineer.
 					I worked at Hoyos Labs, LLC , where I developed a client portal for the company.
 					I graduated from Northeastern University in 2015. While studying at Northeastern,
@@ -24,7 +24,7 @@ export default class Main extends Component{
 					towards the design and enhancement of the existing RCP application named EcoStream.
 					Additionally, I have worked as a web developer in India where I developed web modules based
 					for a website which used WAMP application server platform.
-					<br/>
+					<br/><b/>
 					Through my college and work experience, I have developed a strong background and
 					interest in software application development as well as web applications development.
 					I have worked in major computer languages both academically and professionally
