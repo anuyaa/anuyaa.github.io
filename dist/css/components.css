@@ -5844,6 +5844,7 @@ button.close {
         color: white;
         height: 42px;
         border-bottom: 1px solid white;
+        cursor: pointer;
         position: relative; }
         .root-container .wrapper .side-container .side-row.event-name {
           height: 362px; }
