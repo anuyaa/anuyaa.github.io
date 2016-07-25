@@ -1,0 +1,129 @@
+.main-container  {
+	float: right;
+	background-color: white;
+	box-shadow: 20px 4px 20px 5px blanchedalmond;
+	width: 82%;
+	height: 100%;
+	//background-image: url('../doc/back-image.png');
+
+	.subcontainer{
+		opacity: 0.5;
+		margin: 6% auto;
+		height: 80%;
+		width: 80%;
+		text-align: center;
+
+		.about-container{
+			text-align: justify;
+	    border: 2px solid #999;
+	    padding: 2%;
+	    box-shadow: 2px 3px 6px 3px;
+		}
+
+		.accordian-container{
+			margin: 3%;
+		 text-align: left;
+		 border: solid 2px #CCC;
+		 -moz-box-shadow: 5px 5px 0px #999;
+		 -webkit-box-shadow: 5px 5px 0px #999;
+		 box-shadow: 1px 3px 6px 0 #999;
+		 //height:20%;
+		 height: auto;
+
+		 .summary-container{
+			 height: 25%;
+			 padding: 5px 0px 10px 10px;
+			 box-shadow: 0px 1px 6px 0px #999;
+		 }
+
+		 .detail-container{
+			 height: 0%;
+			 padding: 10px 0px 0px 10px;
+			 display: none;
+
+			 &.active {
+				 height: 75%;
+				 transition: height 2s ease-in;
+				 display: block;
+			 }
+
+			 &.inactive {
+				 height: 0%;
+				 transition: height 2s ease-in;
+				 display: none;
+			 }
+		 }
+		}
+
+		//create a keyframe for animation
+		@keyframes swing
+		{
+		    15%
+		    {
+		        -webkit-transform: translateX(5px);
+		        transform: translateX(5px);
+		    }
+		    30%
+		    {
+		        -webkit-transform: translateX(-5px);
+		        transform: translateX(-5px);
+		    }
+		    50%
+		    {
+		        -webkit-transform: translateX(3px);
+		        transform: translateX(3px);
+		    }
+		    65%
+		    {
+		        -webkit-transform: translateX(-3px);
+		        transform: translateX(-3px);
+		    }
+		    80%
+		    {
+		        -webkit-transform: translateX(2px);
+		        transform: translateX(2px);
+		    }
+		    100%
+		    {
+		        -webkit-transform: translateX(0);
+		        transform: translateX(0);
+		    }
+		}
+		//declare style for the div you want to animate
+		.hyperlink-container{
+			height: 17%;
+			width: 14%;
+			border: 8px solid #F44336;
+			border-radius: 50%;
+			margin: 5% 15% 5% 15%;;
+			box-shadow: 1px 2px 10px 2px #999;
+			float: left;
+			position: relative; // --->1 make parent container position relative
+
+			//--->2  following tag we want to center. Use all the properties to center it
+			a{
+				margin: 0;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+			}
+		}
+
+		// div you want to animate, apply animation,
+		.hyperlink-container:hover{
+			animation-name: swing;
+		  animation-duration: 2s;
+		  animation-timing-function: ease-in-out;
+		  animation-delay: .5s;
+		  animation-iteration-count: 3;
+		  animation-direction: alternate;
+			// animation: swing 1s ease;
+			//  -webkit-animation-iteration-count: 1;
+			//  animation-iteration-count: 1;
+			transform: scale(1.3);
+			border-radius:30%;
+			opacity: 0.7;
+		}
+	}
+}
