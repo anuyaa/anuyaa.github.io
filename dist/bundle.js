@@ -270,6 +270,7 @@ var Main = function (_Component) {
 					_react2.default.createElement('br', null),
 					'I have two years of cumulative experience as a Software Engineer. I worked at Hoyos Labs, LLC , where I developed a client portal for the company. I graduated from Northeastern University in 2015. While studying at Northeastern, I got an opportunity to work with Schneider Electric as a coop where I learned a new framework Rich Client Platform and contributed extensively towards the design and enhancement of the existing RCP application named EcoStream. Additionally, I have worked as a web developer in India where I developed web modules based for a website which used WAMP application server platform.',
 					_react2.default.createElement('br', null),
+					_react2.default.createElement('b', null),
 					'Through my college and work experience, I have developed a strong background and interest in software application development as well as web applications development. I have worked in major computer languages both academically and professionally and out of which I am most like working is Java, JavaScript. I stongly believe that a quality software product is a result of thoughtful design, strong architecture, extensive testing, and ease to use interface.',
 					_react2.default.createElement('br', null),
 					'On a personal note, my hobbies are travelling, hiking, listening music, reading books. Thank you for taking time to know me.'

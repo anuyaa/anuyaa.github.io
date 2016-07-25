@@ -15,7 +15,7 @@ export default class Main extends Component{
 					I am a Software Engineer at Cisco Systems, Boxborough, MA.
 					At Cisco, I am developing Context Service, a cloud storage service.
 					I am extensively involved in design and development of context service.
-					<br/><br/>
+					<br/>
 					I have two years of cumulative experience as a Software Engineer.
 					I worked at Hoyos Labs, LLC , where I developed a client portal for the company.
 					I graduated from Northeastern University in 2015. While studying at Northeastern,
