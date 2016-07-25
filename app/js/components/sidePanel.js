@@ -18,7 +18,7 @@ export default class SidePanel extends Component{
 				<div className="side-container" >
 					<div className="side-row event-name" onClick={() => dispatch(Select('about'))}>
 						<div className="side-elem">
-							<img src="./doc/profile.jpeg" />
+							<img src="./doc/profile.jpeg" title="Ankita Muley"/>
 						</div>
 					</div>
 					<div className="side-row" onClick={() => dispatch(Select('resume'))}>
@@ -26,8 +26,11 @@ export default class SidePanel extends Component{
 							Resume
 						</div>
 					</div>
-					<div className="side-row" onClick={() => dispatch(Select('project'))}><div className="side-elem">Projects</div></div>
-					<div className="side-row" onClick={() => dispatch(Select('contact'))}><div className="side-elem">Contact</div></div>
+					<div className="side-row" onClick={() => dispatch(Select('project'))}>
+						<div className="side-elem">Projects</div>
+					</div>
+					<div className="side-row" onClick={() => dispatch(Select('contact'))}>
+						<div className="side-elem">Contact</div></div>
 				</div>
 		);
 	}

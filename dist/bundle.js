@@ -266,15 +266,13 @@ var Main = function (_Component) {
 						null,
 						'About me'
 					),
-					'Hi there, My name is Ankita Muley. I am a Computer Science graduate from Northeastern University. I got an opportunity to work with Schneider Electric as a coop where I grasped a new framework Rich Client Platform and contributed extensively towards the design and enhancement of the existing RCP application named EcoStream. Additionally, I have worked as a web developer where I delivered web modules based on WAMP application server platform. I have also acquired proficiency in Hadoop Map Reduce Framework and several Data Mining Techniques via courses of my interest. Through my college and work experience, I have developed a strong background and interest in software application development as well as web applications development. I have worked in major computer languages both academically and professionally and out of which I am most comfortable working in Java, NodeJS, JavaScript, MEAN.',
+					'Hi there, My name is Ankita Muley. I am a 2015 Computer Science graduate of Northeastern University. I am a Software Engineer at Cisco Systems, Boxborough, MA. At Cisco, I am developing Context Service, a cloud storage service. I am extensively involved in design and development of context service.',
 					_react2.default.createElement('br', null),
+					'I have two years of cumulative experience as a Software Engineer. I worked at Hoyos Labs, LLC , where I developed a client portal for the company. I graduated from Northeastern University in 2015. While studying at Northeastern, I got an opportunity to work with Schneider Electric as a coop where I learned a new framework Rich Client Platform and contributed extensively towards the design and enhancement of the existing RCP application named EcoStream. Additionally, I have worked as a web developer in India where I developed web modules based for a website which used WAMP application server platform.',
 					_react2.default.createElement('br', null),
-					'Following are the technical skills which I acquired during my education and professional work experience:',
+					'Through my college and work experience, I have developed a strong background and interest in software application development as well as web applications development. I have worked in major computer languages both academically and professionally and out of which I am most like working is Java, JavaScript. I stongly believe that a quality software product is a result of thoughtful design, strong architecture, extensive testing, and ease to use interface.',
 					_react2.default.createElement('br', null),
-					'Programming Languages: JAVA, JavaScript, NodeJS, AngularJS, SQL, C, Python, CSS, SQL, JQuery, XML, Bootstrap, Ajax Databases and Tools:   MySQL, NoSQL (MongoDB), Eclipse, Netbeans, Visual Studio, WEKA Platform/Framework/OS: MEAN, Map Reduce, WAMP,  Git VCS, Windows, Linux/Unix',
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('br', null),
-					'On a personal note, my hobbies are travelling, hiking, listening music, reading books.'
+					'On a personal note, my hobbies are travelling, hiking, listening music, reading books. Thank you for taking time to know me.'
 				)
 			);
 		}
@@ -291,18 +289,26 @@ var Main = function (_Component) {
 	}, {
 		key: 'buildProjectContainer',
 		value: function buildProjectContainer() {
-			var dummy = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen";
+			var detail1 = "It's an web application. End users i.e. university professor's and student's." + " It lets professor's to create quizzes which in turn keeps students interested in the course." + " A student can take quizzes and score in the quiz. Both professor and student can watch videos," + " search books.To check out the application visit http://cs5610-ankita7.rhcloud.com/#/";
+
+			var detail2 = "It's all about Big Data and to process Big Data. Map Reduce is provides a programming" + " approach to process large datasets parallely and efficiently. In this project, my team implemented" + " map reduce framework's building blocks. We processed large dataset using our implementation of the framework." + " We compared the processing performance of our implementation environment against AWS environment." + " Check out the project on github https://github.com/anuyaa/MR";
 			var data = [{
-				"summary": 'Lorem ipsum title',
-				"detail": dummy
+				"summary": "Whiteboard - An online quiz portal",
+				"detail": detail1
 			}, {
-				'summary': 'Lorem ipsum title',
-				'detail': dummy
+				'summary': 'Map Reduce Framework',
+				'detail': detail2
 			}];
 
 			return _react2.default.createElement(
 				'div',
 				{ className: 'subcontainer' },
+				_react2.default.createElement(
+					'h4',
+					null,
+					'Couple of my academic projects'
+				),
+				_react2.default.createElement('br', null),
 				data.map(function (elem, index) {
 					return _react2.default.createElement(_accordian2.default, { key: index, summary: elem.summary, detail: elem.detail });
 				}),
@@ -333,7 +339,7 @@ var Main = function (_Component) {
 				_react2.default.createElement(
 					'div',
 					{ className: 'about-container' },
-					'You can reach me at #908-655-1647 or write me at ankitaa77777@gmail.com'
+					'You can reach me at #908-655-1647 or write me at `ankitaa77777@gmail.com`'
 				)
 			);
 		}
@@ -531,7 +537,7 @@ var SidePanel = function (_Component) {
 					_react2.default.createElement(
 						'div',
 						{ className: 'side-elem' },
-						_react2.default.createElement('img', { src: './doc/profile.jpeg' })
+						_react2.default.createElement('img', { src: './doc/profile.jpeg', title: 'Ankita Muley' })
 					)
 				),
 				_react2.default.createElement(
